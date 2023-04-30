@@ -177,7 +177,7 @@ fn create_cli_menu() -> Command {
         )
         .arg(
             Arg::new(ARG_ID_FILE_CONFLICT_RESOLUTION_STRATEGY)
-                .long("file_conflict_resolution_strategy")
+                .long("file-conflict-resolution-strategy")
                 .value_name("STRATEGY")
                 .help("A strategy that determines how encountered file conflicts must be resolved. Possible values: [ skip, overwrite, error_out ].")
                 .required(false)

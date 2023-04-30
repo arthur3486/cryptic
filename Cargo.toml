@@ -1,0 +1,28 @@
+[package]
+name = "cryptic"
+version = "0.1.0"
+edition = "2021"
+authors = ["Arthur Ivanets <arthur.ivanets.work@gmail.com>"]
+description = "A simple tool for efficient encryption/decryption of your files."
+
+[dependencies]
+aes-gcm = "0.10.1"
+clap = { version = "4.2.4", features = ["cargo"] }
+hex = "0.4.3"
+hkdf = "0.12.3"
+rand = "0.8.5"
+rayon = "1.7.0"
+rpassword = "7.2"
+sha2 = "0.10.6"
+walkdir = "2.3.3"
+
+[target.x86_64-unknown-linux-gnu]
+
+[target.x86_64-apple-darwin]
+rustflags = ["-C", "link-arg=-mmacosx-version-min=10.13"]
+
+[target.aarch64-apple-darwin]
+rustflags = ["-C", "target-feature=+aarch64+macosx-version-min=11.0"]
+
+[target.x86_64-pc-windows-gnu]
+rustflags = ["-C", "target-feature=+crt-static"]

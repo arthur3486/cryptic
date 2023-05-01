@@ -2,6 +2,7 @@
 
 A simple self-contained CLI tool that makes it easy to efficiently encrypt/decrypt your files.
 
+[![Build](https://github.com/arthur3486/cryptic/workflows/CI/badge.svg?branch=main)](https://github.com/arthur3486/cryptic/actions)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Contents

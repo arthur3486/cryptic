@@ -98,7 +98,7 @@ fn decrypt_files(config: &Config, conflict_res_strategy: ConflictResolutionStrat
 }
 
 fn log_file_operation_message(config: &Config, message: &str, file: &FileEntry) {
-    if (config.is_verbose_mode_enabled) {
+    if ((config.is_verbose_mode_enabled)) {
         println!("{}. File: {:?}", message, file.absolute_path)
     }
 }
